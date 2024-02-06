@@ -48,13 +48,18 @@ h3 {
 header {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 15% 70% 15%;
+    grid-template-columns: 15% 75% 10%;
     position: fixed;
     height: 100px;
     width: 100%;
     background-color: #333333;
     box-shadow: 0px 0px 5px black;
     z-index: 1;
+}
+
+#logo {
+    grid-area: 1/1/2/2;
+    margin: auto;
 }
 
 /*Regler för huvudmeny.*/
@@ -130,7 +135,7 @@ header {
 /*Regler som gäller om skärmen har en maxbredd på 700 pixlar. Detta för att anpassa innehållet till framförallt mobiltelefoner.*/
 @media screen and (max-width: 1024px) {
     header {
-        grid-template-columns: 25% 50% 25%;
+        grid-template-columns: 50% 25% 25%;
     }
 
     #huvudmeny {
