@@ -121,4 +121,20 @@ header {
 }
 
 /*Slut på regler för huvudmeny.*/
+
+/*Regler som gäller om skärmen har en maxbredd på 700 pixlar. Detta för att anpassa innehållet till framförallt mobiltelefoner.*/
+@media screen and (max-width: 1024px) {
+    header {
+        grid-template-columns: 25% 50% 25%;
+    }
+
+    #huvudmeny {
+        width: 100vw;
+    }
+
+    #closemenu {
+        width: 100vw;
+    }
+}
+
 /*Slut på regler för header.*/
