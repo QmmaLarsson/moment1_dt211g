@@ -8,7 +8,7 @@ body {
     /*Textstorlek 16px som standard*/
     font-size: 2rem;
     line-height: 2.5rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     margin: 0;
 }
 
@@ -157,3 +157,29 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+/*Slut på regler för header.*/
+
+/*Regler för startsida.*/
+#container1 {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 20% 60% 20%;
+}
+
+#heading1 {
+grid-area: 1/2/2/3;
+}
+
+#text1 {
+    grid-area: 2/2/3/3;
+}
+
+#text2 {
+    grid-area: 3/2/4/3;
+}
+
+#list1 {
+    grid-area: 4/2/5/3;
+}
+/*Slut på regler för startsida.*/
