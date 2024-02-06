@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startsida</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/d768b3824b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <header>
+        <!-- En knapp för att öppna meny -->
+        <button id="openmenu" class="button">
+            <span><i class="fa-solid fa-bars"></i></span>
+            <span>
+                <br>Meny
+            </span>
+        </button>
+
+        <nav id="huvudmeny">
+            <!-- En knapp för att stänga meny -->
+            <button id="closemenu" class="button">
+                <span>X</span>
+                <span>Stäng</span>
+            </button>
+
+            <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="images.html">Bilder</a></li>
+                <li><a href="assignment.html">Uppgift</a></li>
+            </ul>
+        </nav>
+    </header>
+
 </body>
+
 </html>

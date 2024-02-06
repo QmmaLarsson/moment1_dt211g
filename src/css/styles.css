@@ -1,0 +1,6 @@
+/*Regler för huvudmeny.*/
+#huvudmeny {
+    /*Menyn visas inte i startläget. För att menyn ska visas måste man klicka på "Meny"-knappen. Denna funktion skapas med hjälp av 
+    JavaScript.*/
+    display: none;
+}
