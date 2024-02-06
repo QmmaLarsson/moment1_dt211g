@@ -192,7 +192,7 @@ footer {
 
 /*Slut på regler för startsida.*/
 
-/*Regler för startsida.*/
+/*Regler för sidan "Bilder".*/
 #container2 {
     display: grid;
     grid-template-rows: auto;
@@ -239,4 +239,27 @@ img {
     }
 }
 
-/*Slut på regler för startsida.*/
+/*Slut på regler för sidan "Bilder".*/
+
+/*Regler för sidan "Arbetsprocess".*/
+#container3 {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 20% 60% 20%;
+}
+
+#heading3 {
+    grid-area: 1/2/2/3;
+}
+
+#text3 {
+    grid-area: 2/2/3/3;
+}
+
+/*Regler som gäller om skärmen har en maxbredd på 700 pixlar. Detta för att anpassa innehållet till framförallt mobiltelefoner.*/
+@media screen and (max-width: 700px) {
+    #container3 {
+        grid-template-columns: 10% 80% 10%;
+    }
+}
+/*Slut på regler för sidan "Arbetsprocess".*/

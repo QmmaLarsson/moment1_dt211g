@@ -40,7 +40,44 @@
     </header>
 
     <main>
-        <h1>Arbetsprocess</h1>
+
+        <div id="container3">
+
+            <h1 id="heading3">Arbetsprocess</h1>
+
+            <p id="text3">Jag började med att använda mig av programmet NodeJS för att starta ett nytt NPM projekt. För
+                att göra detta så öppnade jag kommandoprompten, gick jag in i den katalog jag tänkt använda och skrev
+                jag ”npm init”. När projektet är skapat öppnar jag katalogen i Visual Studio Code och där fanns då en
+                package.json-fil med information rörande projektet. <br><br>
+                Nästa steg var att installera Parcel. Detta gjorde jag genom att jag gick in i terminalen i Visual
+                Studio Code och skrev ”npm install parcel --save-dev”, varpå Parcel laddades ner. <br><br>
+                Parcel är ett program som används för att automatisera processen vid skapandet
+                av en webbplats. Det optimerar alla filer innan de publiceras till webbläsaren. Vissa filer slås till
+                och med ihop för att göras så små som möjligt. Parcel är ett program som kräver noll konfiguration (det
+                har alla grundinställningar som behövs från start). <br><br>
+                När jag lade in JavaScript-filen i HTML-filerna så skrev jag type=”module” i script-taggen. Module är en
+                extern JavaScript-fil som kompilerar filer automatiskt. <br><br>
+                När jag lade in bilderna på webbplatsen så lade jag dom i en picture-tagg med information om vilken
+                storlek samt vilket filformat jag ville att bilderna skulle ha. Utifrån den informationen jag lade in
+                komprimerade och optimerade Parcel bilderna. <br><br>
+                I package.json-filen så lade jag till ett script för start (”start”: ”parcel”) och ett script för att
+                byggandet av webbplatsen (”build”: ”parcel build”). Jag lade även till vilken sida som jag ville att
+                webbplatsen skulle starta på, vilket var ”index.html”. <br><br>
+                Jag skapade en katalog med de arbetsfiler jag använde för att skapa webbplatsen. Denna katalog kallade
+                jag för src. I katalogen fanns filer för CSS, JavaScript, HTML samt bilder. <br><br>
+                Jag skapade även en .gitignore-fil. I denna fil skrev jag ner de kataloger som jag inte ville skulle
+                publiceras på Github. Dessa kataloger var .parcel_cache, dist och node_modules. <br><br>
+                När jag gjort ovanstående steg så skrev jag ”npm start” i terminalen. Detta gjorde att en webbserver med
+                live reload startades. Där kunde jag hela tiden se de ändringar jag gjorde på webbplatsen. Samtidigt så
+                komprimerade/transpilerade Parcel alla de ändringar jag gjorde. <br><br>
+                När webbplatsen var klar så skrev jag ”npm run build” i terminalen. Detta gjorde att en ny katalog
+                skapades i rotkatalogen, med webbplatsen färdig för publicering. <br><br>
+                Under arbetets gång så versionhanterades hela tiden arbetet via Github. Github-repot var i sin tur
+                kopplat till Netlify där den färdiga webbplatsen publicerades.
+            </p>
+
+        </div>
+
     </main>
 
     <footer>
