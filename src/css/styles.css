@@ -191,3 +191,52 @@ footer {
 }
 
 /*Slut på regler för startsida.*/
+
+/*Regler för startsida.*/
+#container2 {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 14.5% 35% 1% 35% 14.5%;
+}
+
+#heading2 {
+    grid-area: 1/1/2/6;
+    margin-bottom: 20px;
+}
+
+#img1 {
+    grid-area: 2/2/3/3;
+    margin: auto;
+    margin-right: 0;
+}
+
+#img2 {
+    grid-area: 2/4/3/5;
+}
+
+img {
+    max-width: 800px;
+    width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    #container2 {
+        grid-template-columns: 10% 80% 10%;
+    }
+
+    #heading2 {
+        grid-area: 1/1/2/4;
+    }
+    
+    #img1 {
+        grid-area: 2/2/3/3;
+        margin: auto;
+        margin-right: 0;
+    }
+    
+    #img2 {
+        grid-area: 3/2/4/3;
+    }
+}
+
+/*Slut på regler för startsida.*/
