@@ -26,17 +26,34 @@ function toggleMenu() {
 const url = ("../ramschema_ht23.json");
 window.onload = init();
 
+//Variabel för sökruta
+const searchBarEl = document.getElementById("searchBar");
+const tableEl = document.getElementById("table");
+let courses = [];
+
+//Händelsehanterare för sökruta
+searchBarEl.addEventListener("keyup", (e) => {
+    const searchString = e.target.value.toLowerCase();
+    console.log(searchString);
+    const filteredCourses = courses.filter(course => {
+        return course.code.toLowerCase().includes(searchString) || course.coursename.toLowerCase().includes(searchString)
+    });
+    tableEl.innerHTML = '';
+    displayCourses(filteredCourses);
+
+});
+
 async function init() {
     try {
         //Fetch-anrop
         const response = await fetch(url);
-        let courses = await response.json();
+        courses = await response.json();
 
         //Variabler för tabell
         const tableEl = document.getElementById("table");
-        let codeEl = document.getElementById("code");
-        let nameEl = document.getElementById("name");
-        let progressionEl = document.getElementById("progression");
+        const codeEl = document.getElementById("code");
+        const nameEl = document.getElementById("name");
+        const progressionEl = document.getElementById("progression");
 
         //Händelsehanterare för tabell
         codeEl.addEventListener("click", sortCode);
