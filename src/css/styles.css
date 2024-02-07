@@ -227,13 +227,13 @@ img {
     #heading2 {
         grid-area: 1/1/2/4;
     }
-    
+
     #img1 {
         grid-area: 2/2/3/3;
         margin: auto;
         margin-right: 0;
     }
-    
+
     #img2 {
         grid-area: 3/2/4/3;
     }
@@ -262,4 +262,69 @@ img {
         grid-template-columns: 10% 80% 10%;
     }
 }
+
 /*Slut på regler för sidan "Arbetsprocess".*/
+
+/*Regler för sidan "Moment 2"*/
+
+#container4 {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 20% 60% 20%;
+}
+
+
+#heading4 {
+    grid-area: 1/2/2/3;
+    margin-bottom: 20px;
+}
+
+#text {
+    grid-area: 2/2/3/3;
+}
+
+#searchBar {
+    grid-area: 3/2/4/3;
+    width: 100%;
+}
+
+table {
+    grid-area: 4/2/5/3;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+th {
+    background-color: #333333;
+    color: white;
+    text-align: left;
+    padding: 5px;
+}
+
+th:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+tr {
+    border-bottom: 1px solid #333333;
+}
+
+td {
+    padding: 5px;
+}
+
+/*Regler som gäller om skärmen har en maxbredd på 700 pixlar. Detta för att anpassa innehållet till framförallt mobiltelefoner.*/
+@media screen and (max-width: 700px) {
+    #container4 {
+        grid-template-columns: 10% 80% 10%;
+    }
+
+    table {
+        font-size: 1.5rem;
+    }
+}
+
+/*Slut på regler för sidan "Moment 2"*/
