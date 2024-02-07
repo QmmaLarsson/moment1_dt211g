@@ -23,7 +23,7 @@ function toggleMenu() {
 }
 
 /*Moment 2*/
-const url = ("../ramschema_ht23.json");
+const url = ("./ramschema_ht23.json");
 window.onload = init();
 
 //Variabel för sökruta
