@@ -316,6 +316,10 @@ td {
     padding: 5px;
 }
 
+#error {
+    grid-area: 5/2/6/3;
+}
+
 /*Regler som gäller om skärmen har en maxbredd på 700 pixlar. Detta för att anpassa innehållet till framförallt mobiltelefoner.*/
 @media screen and (max-width: 700px) {
     #container4 {

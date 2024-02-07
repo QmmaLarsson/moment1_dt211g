@@ -34,7 +34,6 @@ let courses = [];
 //Händelsehanterare för sökruta
 searchBarEl.addEventListener("keyup", (e) => {
     const searchString = e.target.value.toLowerCase();
-    console.log(searchString);
     const filteredCourses = courses.filter(course => {
         return course.code.toLowerCase().includes(searchString) || course.coursename.toLowerCase().includes(searchString)
     });
