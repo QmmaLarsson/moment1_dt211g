@@ -14,6 +14,7 @@ body {
 
 main {
     padding-top: 100px;
+    min-height: 80vh;
 }
 
 h1 {
@@ -323,11 +324,11 @@ td {
 /*Regler som gäller om skärmen har en maxbredd på 700 pixlar. Detta för att anpassa innehållet till framförallt mobiltelefoner.*/
 @media screen and (max-width: 700px) {
     #container4 {
-        grid-template-columns: 10% 80% 10%;
+        grid-template-columns: 5% 90% 5%;
     }
 
     table {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
 
